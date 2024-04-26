@@ -12,6 +12,8 @@ terraform plan
 
 terraform apply
 
+terraform destroy
+
 aws eks update-kubeconfig --region us-east-1 --name jgl-eks --alias jgl-eks --profile default
 ```
 

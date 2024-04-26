@@ -1,0 +1,10 @@
+# Ignorar un archivo específico
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignorar todos los archivos con una extensión específica
+*.tfstate
+
+# Ignorar todos los archivos en un directorio y sus subdirectorios
+.terraform/**
