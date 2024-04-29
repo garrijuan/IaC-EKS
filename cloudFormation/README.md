@@ -10,3 +10,17 @@ eksctl create cluster -f Cluster.yaml
 ```
 Inside CloudFormation modulu can see the stack with all steps, in this case we find two stack: cluster and nodes(ec2)
 
+--------------------------------------------------------
+# Create manually cluster
+-Create cluster EKS with the specific configuration
+-create two roles on IAM:
+    -(EKS-cluster):AmazonEKSClusterPolicy
+    -(EC2):AmazonEKS_CNI_Policy,AmazonEKSWorkerNodePolicy,AmazonEC2ContainerRegistryReadOnly
+- create workerNodes
+    -compute->add node group , choose the type of instances etc
+    
+-binding kubectl with cluster:
+```sh
+eks --region us-east-1 update-kubeconfig --name nombreCluster
+```
+-modify ec2->security-groups and edit inbound groups, create rules to our port where server the service 
