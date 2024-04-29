@@ -5,7 +5,7 @@ eksctl create cluster --name development --dry-run
 Last command return a basic yaml file
 # crear cluster y nodos
 ```sh
-eksctl create cluster -f Cluster.yaml
+eksctl create cluster -f cluster_EKS.yml
 
 ```
 Inside CloudFormation modulu can see the stack with all steps, in this case we find two stack: cluster and nodes(ec2)
