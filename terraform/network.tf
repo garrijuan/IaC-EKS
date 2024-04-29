@@ -11,6 +11,7 @@ module "vpc" {
   create_igw         = true
   enable_nat_gateway = true
   single_nat_gateway = true #en prod lo ideal es tener una nat por cada subnet privada(poner en false), por si se cae una az tener las otras para salir a internet 
+                            ##true: crea un solo nat y comparte con todas las subnet, false: crea un nat por cada subnet
 
   tags = {
     terraform  = "true"
