@@ -12,7 +12,7 @@ kubernetesNetworkConfig:
   ipFamily: IPv4
 managedNodeGroups:
 - amiFamily: AmazonLinux2
-  desiredCapacity: 1                  #number of nodes
+  desiredCapacity: 2                  #number of nodes
   disableIMDSv1: true
   disablePodIMDS: false
   iam:
@@ -56,7 +56,7 @@ managedNodeGroups:
 metadata:
   name: jgl-cluster              #cluster name
   region: us-east-1
-  version: "1.29"
+  version: "1.28"
 privateCluster:
   enabled: false
   skipEndpointCreation: false
