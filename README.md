@@ -9,6 +9,8 @@ _CloudFormation_ on the other hand is proprietary to AWS and allows us to build 
 
 ## Configure AWS Credentials
 
+- Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
+
 Generate Security Credentials using AWS Management Console
 Go to Services -> IAM -> Users -> "Your-Admin-User" -> Security Credentials -> Create Access Key
 Configure AWS credentials using SSH Terminal on your local desktop
