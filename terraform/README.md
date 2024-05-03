@@ -17,6 +17,7 @@ terraform apply -auto-approve
 # Terraform Destroy
 terraform apply -destroy -auto-approve
 rm -rf .terraform*
+rm -rf terraform.tfstate*
 
 aws eks update-kubeconfig --region us-east-1 --name jgl-eks --alias jgl-eks --profile default
 ```
