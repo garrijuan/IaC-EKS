@@ -8,11 +8,15 @@ terraform login   # yes y meto la pass, para repositar en terraform registry
 
 terraform init    # descarga todas las dependencias y modulos necesarios 
 
+terraform validate
+
 terraform plan
 
-terraform apply
+terraform apply -auto-approve
 
-terraform destroy
+# Terraform Destroy
+terraform apply -destroy -auto-approve
+rm -rf .terraform*
 
 aws eks update-kubeconfig --region us-east-1 --name jgl-eks --alias jgl-eks --profile default
 ```
