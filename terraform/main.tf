@@ -6,5 +6,4 @@ terraform {
       source = "registry.terraform.io/hashicorp/aws"
     }
   }
-
 }

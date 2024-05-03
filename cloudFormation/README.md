@@ -10,6 +10,11 @@ eksctl create cluster -f cluster_EKS.yml
 ```
 Inside CloudFormation modulu can see the stack with all steps, in this case we find two stack: cluster and nodes(ec2)
 
+-binding kubectl with cluster:
+```sh
+eks --region us-east-1 update-kubeconfig --name jgl-cluster
+```
+
 --------------------------------------------------------
 # Create manually cluster
 -Create cluster EKS with the specific configuration

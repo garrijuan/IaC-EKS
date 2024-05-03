@@ -9,13 +9,28 @@ module "vpc" {
   public_subnets  = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
 
   create_igw         = true
+  # NAT Gateways - Outbound Communication
   enable_nat_gateway = true
   single_nat_gateway = true #en prod lo ideal es tener una nat por cada subnet privada(poner en false), por si se cae una az tener las otras para salir a internet 
                             ##true: crea un solo nat y comparte con todas las subnet, false: crea un nat por cada subnet
+  
+  # VPC DNS Parameters
+  #enable_dns_hostnames = true
+  #enable_dns_support = true
 
+  public_subnet_tags = {
+    Type = "public-subnets"
+  }
+
+  private_subnet_tags = {
+    Type = "private-subnets"
+  }
   tags = {
     terraform  = "true"
     Enviroment = "staging"
+  }
 
+  vpc_tags = {
+    Name = "vpc-dev"
   }
 }

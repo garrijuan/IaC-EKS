@@ -34,10 +34,10 @@ managedNodeGroups:
   instanceType: t3.small             #tipo de instancia
   labels:
     alpha.eksctl.io/cluster-name: jgl-cluster  #cluster name
-    alpha.eksctl.io/nodegroup-name: ng-d1ff351c
+    alpha.eksctl.io/nodegroup-name: ng-82552396
   maxSize: 2                          #autoscaling, hasta cuantas instancias puede levnatar
   minSize: 2                          #numero de instancias levantadas minimas
-  name: ng-d1ff351c
+  name: ng-82552396
   privateNetworking: false
   releaseVersion: ""
   securityGroups:
@@ -47,7 +47,7 @@ managedNodeGroups:
     allow: false
     publicKeyPath: ""
   tags:
-    alpha.eksctl.io/nodegroup-name: ng-d1ff351c
+    alpha.eksctl.io/nodegroup-name: ng-82552396
     alpha.eksctl.io/nodegroup-type: managed
   volumeIOPS: 3000
   volumeSize: 40                      #capacidad de la instancia en Gb
@@ -56,7 +56,7 @@ managedNodeGroups:
 metadata:
   name: jgl-cluster              #cluster name
   region: us-east-1
-  version: "1.28"
+  version: "1.27"
 privateCluster:
   enabled: false
   skipEndpointCreation: false
