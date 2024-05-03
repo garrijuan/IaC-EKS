@@ -1,4 +1,4 @@
-**Infraestructure As Code - IaC**
+# Infraestructure As Code - IaC
 
 in this repository, we work with infrastructure as code on a kubernetes cluster on AWS, we use two methods: terraform and cloudformation.
 
@@ -21,6 +21,10 @@ AWS Access Key ID:  ...
 AWS Secret Access Key: ...
 Default region name: us-east-1
 Default output format: json
+
+```sh
+aws --version
+```
 
 # for example, verify if we are able list S3 buckets 
 ```sh
