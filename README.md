@@ -27,6 +27,6 @@ Default output format: json
 aws s3 ls
 ```
 Verify the AWS Credentials Profile
-```
-cat $HOME/.aws/credentials 
+```sh
+cat ~/.aws/credentials
 ```
