@@ -1,7 +1,7 @@
 apiVersion: eksctl.io/v1alpha5
 availabilityZones:
-- us-east-1a
-- us-east-1b
+- us-west-1a
+- us-west-1b
 cloudWatch:
   clusterLogging: {}
 iam:
@@ -55,7 +55,7 @@ managedNodeGroups:
   volumeType: gp3
 metadata:
   name: jgl-cluster              #cluster name
-  region: us-east-1
+  region: us-west-1
   version: "1.27"
 privateCluster:
   enabled: false

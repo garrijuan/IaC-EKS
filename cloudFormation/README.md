@@ -12,7 +12,7 @@ Inside CloudFormation modulu can see the stack with all steps, in this case we f
 
 -binding kubectl with cluster:
 ```sh
-eks --region us-east-1 update-kubeconfig --name jgl-cluster
+eks --region us-west-1 update-kubeconfig --name jgl-cluster
 ```
 
 --------------------------------------------------------
