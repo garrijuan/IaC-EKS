@@ -31,3 +31,12 @@ eks --region us-west-1 update-kubeconfig --name jgl-cluster
 eks --region us-east-1 update-kubeconfig --name nombreCluster
 ```
 -modify ec2->security-groups and edit inbound groups, create rules to our port where server the service 
+
+
+
+
++++++++++
+Problemas encontrados:
+failed to create: [ManagedNodeGroup]
+You've reached your quota for maximum Fleet Requests for this account. Launching EC2 instance failed.
++++++++++
