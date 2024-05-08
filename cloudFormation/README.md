@@ -8,7 +8,9 @@ Last command return a basic yaml file
 eksctl create cluster -f cluster_EKS.yml
 
 ```
-Inside CloudFormation modulu can see the stack with all steps, in this case we find two stack: cluster and nodes(ec2)
+Inside CloudFormation module can see the stack with all steps, in this case we find two stack: cluster and nodes(ec2)
+
+![alt text](/documents/cloudformation.png "cloudformation")
 
 -binding kubectl with cluster:
 ```sh
