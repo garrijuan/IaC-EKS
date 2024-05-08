@@ -20,8 +20,11 @@ Configure AWS credentials using SSH Terminal on your local desktop
 aws configure
 ```
 AWS Access Key ID:  ...
+
 AWS Secret Access Key: ...
+
 Default region name: us-east-1
+
 Default output format: json
 
 ```sh
