@@ -14,7 +14,7 @@ Inside CloudFormation module can see the stack with all steps, in this case we f
 
 -binding kubectl with cluster:
 ```sh
-eks --region us-west-1 update-kubeconfig --name jgl-cluster
+aws eks --region eu-central-1 update-kubeconfig --name jgl-cluster
 ```
 
 --------------------------------------------------------
@@ -28,7 +28,7 @@ eks --region us-west-1 update-kubeconfig --name jgl-cluster
     
 -binding kubectl with cluster:
 ```sh
-eks --region us-east-1 update-kubeconfig --name nombreCluster
+aws eks --region eu-central-1 update-kubeconfig --name nombreCluster
 ```
 -modify ec2->security-groups and edit inbound groups, create rules to our port where server the service 
 
