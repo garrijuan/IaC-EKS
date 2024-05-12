@@ -1,7 +1,7 @@
 apiVersion: eksctl.io/v1alpha5
 availabilityZones:
-- eu-central-1a
-- eu-central-1b
+- eu-west-1a
+- eu-west-1b
 cloudWatch:
   clusterLogging: {}
 iam:
@@ -31,7 +31,7 @@ managedNodeGroups:
       imageBuilder: false
       xRay: false
   instanceSelector: {}
-  instanceType: t3.small             #tipo de instancia
+  instanceType: t3.medium             #tipo de instancia
   labels:
     alpha.eksctl.io/cluster-name: jgl-cluster  #cluster name
     alpha.eksctl.io/nodegroup-name: ng-82552396
@@ -55,7 +55,7 @@ managedNodeGroups:
   volumeType: gp3
 metadata:
   name: jgl-cluster              #cluster name
-  region: eu-central-1
+  region: eu-west-1
   version: "1.27"
 privateCluster:
   enabled: false
