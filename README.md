@@ -33,19 +33,18 @@ aws configure --profile jg1938112
 ```
 Los archivos deberían verse algo así:
 
-| ~/.aws/config:      |
-| -----------------   |
-| [profile cuenta1]
-   region = us-west-2
-  [profile cuenta2] 
-   region = us-east-1 |
+~/.aws/config:     
+  
+[profile cuenta1]    
+region = us-west-2 
+[profile cuenta2]   
+region = us-east-1 
 
 ~/.aws/credentials:
 
 [cuenta1]
 aws_access_key_id = <clave_de_acceso_1>
 aws_secret_access_key = <clave_secreta_1>
-
 [cuenta2]
 aws_access_key_id = <clave_de_acceso_2>
 aws_secret_access_key = <clave_secreta_2>
