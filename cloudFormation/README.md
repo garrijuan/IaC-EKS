@@ -6,7 +6,7 @@ Last command return a basic yaml file
 # crear cluster y nodos
 ```sh
 eksctl create cluster -f cluster_EKS.yml
-
+AWS_PROFILE=jg1938112 eksctl create cluster -f cluster_EKS.yml
 ```
 Inside CloudFormation module can see the stack with all steps, in this case we find two stack: cluster and nodes(ec2)
 
