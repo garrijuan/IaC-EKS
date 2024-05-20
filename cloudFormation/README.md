@@ -14,7 +14,8 @@ Inside CloudFormation module can see the stack with all steps, in this case we f
 
 -binding kubectl with cluster:
 ```sh
-aws eks --region eu-west-1 update-kubeconfig --name jgl-cluster
+aws eks --region us-east-1 update-kubeconfig --name jgl-cluster
+AWS_PROFILE=jg1938112 aws eks --region us-east-1 update-kubeconfig --name jgl-clusterkubectl
 ```
 
 --------------------------------------------------------
